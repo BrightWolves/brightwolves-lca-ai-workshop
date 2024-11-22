@@ -85,7 +85,96 @@ lca-llm-workshop/
 └── solutions/        # Team solutions
 ```
 
-## Team Workflow
+## Development Workflow
+
+We follow trunk-based development with the `main` branch as our trunk. All changes are made through short-lived feature branches and merged via Pull Requests.
+
+### Initial Setup
+
+1. **Fork and Clone**
+   ```bash
+   # Fork via GitHub interface, then:
+   git clone https://github.com/your-username/brightwolves-lca-ai-workshop.git
+   cd brightwolves-lca-ai-workshop
+   ```
+
+2. **Set Up Remote**
+   ```bash
+   git remote add upstream https://github.com/brightwolves/brightwolves-lca-ai-workshop.git
+   ```
+
+### Team Workflow
+
+1. **Start Fresh**
+   ```bash
+   # Get latest changes
+   git checkout main
+   git pull upstream main
+   
+   # Create short-lived feature branch
+   git checkout -b feature/team_XX_exercise_YY
+   ```
+
+2. **Copy Template** (first time only)
+   ```bash
+   cp -r solutions/team_template solutions/team_XX
+   ```
+
+3. **Regular Commits**
+   ```bash
+   # Stage and commit changes
+   git add solutions/team_XX
+   git commit -m "team_XX: Brief description of changes"
+   
+   # Push to your fork
+   git push origin feature/team_XX_exercise_YY
+   ```
+
+4. **Create Pull Request**
+   - Create PR via GitHub interface
+   - Use the PR template
+   - Target the `main` branch
+   - Include:
+     - Team members
+     - Exercise description
+     - Approach summary
+     - Test results
+
+5. **Review Process**
+   - PR needs one approval
+   - All checks must pass
+   - Keep changes focused and small
+   - Address review comments promptly
+
+6. **After Merge**
+   ```bash
+   # Delete local feature branch
+   git checkout main
+   git branch -D feature/team_XX_exercise_YY
+   
+   # Update local main
+   git pull upstream main
+   ```
+
+### Branch Naming Convention
+
+- Format: `feature/team_XX_exercise_YY`
+- Example: `feature/team_01_data_extraction`
+
+### Commit Message Format
+
+```
+team_XX: Brief description of change
+
+- Detailed point 1
+- Detailed point 2
+```
+
+### PR Title Format
+
+```
+team_XX: Exercise YY - Brief Description
+```
 
 1. **Create Team Branch**
    ```bash
@@ -144,7 +233,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
 
 ## Acknowledgments
 
-- VTK/Emergent for collaboration
+- [Emergent Leuven](https://emergentleuven.be/) and [Vlaamse Technische Kring (VTK)](https://vtk.be/) for collaboration
 - Workshop participants for feedback
 - Open-source tools and libraries used
 
