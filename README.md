@@ -278,7 +278,7 @@ team_XX: Exercise YY - Brief Description
     - [API Documentation](link-to-docs)
     - [Example Solutions](link-to-examples)
 
-## Support
+## Getting Help
 
 - Technical issues: [Open GitHub Issue](https://github.com/BrightWolves/brightwolves-lca-ai-workshop/issues)
 - Workshop questions: [Use Discussion board](https://github.com/BrightWolves/brightwolves-lca-ai-workshop/discussions)
