@@ -19,41 +19,101 @@ This workshop demonstrates how Large Language Models (LLMs) can enhance Life Cyc
 - GitHub account
 - API access (instructions provided)
 
-## Getting Started
+## Quick Start
 
-1. **Clone the Repository**
+1. **Prerequisites**
    ```bash
-   git clone https://github.com/brightwolves/brightwolves-lca-ai-workshop.git
-   cd brightwolves-lca-ai-workshop
+   # Install uv package manager
+   curl -LsSf https://astral.sh/uv/install.sh | sh  # Unix/macOS
+   powershell -c "irm https://astral.sh/uv/install.ps1 | iex"  # Windows
    ```
 
-2. **Set Up Environment**
+2. **Clone & Setup**
    ```bash
-   # Install uv (Unix/macOS)
-   curl -LsSf https://astral.sh/uv/install.sh | sh
+   # Fork repo via GitHub interface first, then:
+   git clone https://github.com/your-username/brightwolves-lca-ai-workshop.git
+   cd brightwolves-lca-ai-workshop
+   
+   # Add upstream remote
+   git remote add upstream https://github.com/brightwolves/brightwolves-lca-ai-workshop.git
+   ```
 
-   # Install uv (Windows PowerShell)
-   powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
-
-   # Create and activate virtual environment
+3. **Environment Setup**
+   ```bash
+   # Create and activate environment
    uv venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
+   source .venv/bin/activate  # Windows: .venv\Scripts\activate
+   
    # Install dependencies
    uv pip install -r requirements.txt
+   
+   # Setup environment variables
+   cp .env.template .env
+   # Edit .env with your API keys
    ```
 
-   Note: uv is used for faster, more reliable dependency management than pip. If you encounter issues, you can fall back to standard pip:
+4. **Create Team Environment**
    ```bash
+   # Create feature branch
+   git checkout -b feature/team_XX_setup  # Replace XX with team number
+   
+   # Copy template
+   cp -r solutions/team_template solutions/team_XX
+   
+   # Commit setup
+   git add solutions/team_XX
+   git commit -m "team_XX: Initial setup"
+   git push origin feature/team_XX_setup
+   ```
+
+5. **Create Pull Request**
+   - Go to GitHub repository
+   - Create PR from your feature branch to main
+   - Fill in PR template
+   - Request review
+
+## Development Flow
+
+1. **Start New Exercise**
+   ```bash
+   # Update main
+   git checkout main
+   git pull upstream main
+   
+   # Create feature branch
+   git checkout -b feature/team_XX_exercise_YY
+   ```
+
+2. **Work on Exercise**
+   - Code in your team's directory
+   - Commit frequently
+   - Push to share with team
+   - Run tests locally
+
+3. **Submit Solution**
+   - Create PR via GitHub
+   - Follow PR template
+   - Request review
+   - Address feedback
+
+## Common Issues
+
+1. **Environment**
+   ```bash
+   # If uv fails, fallback to pip:
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate
    pip install -r requirements.txt
    ```
 
-3. **Configure API Access**
+2. **Git Issues**
    ```bash
-   cp .env.template .env
-   # Edit .env with your API keys
+   # Reset local changes
+   git checkout -- .
+   
+   # Update from upstream
+   git fetch upstream
+   git reset --hard upstream/main
    ```
 
 ## Workshop Structure
@@ -74,15 +134,29 @@ Teams work on mineral wool insulation case study:
 - Best practices
 - Implementation considerations
 
+## Next Steps
+1. Complete environment setup
+2. Read exercise documentation
+3. Start first exercise
+
 ## Repository Structure
 
 ```
 lca-llm-workshop/
-├── data/             # Shared datasets
-├── notebooks/        # Starter notebooks
-├── src/              # Shared utilities
-├── tests/            # Validation tests
-└── solutions/        # Team solutions
+├── solutions/
+│   ├── team_template/       # Template structure
+│   │   ├── src/             # Team's source code
+│   │   ├── tests/           # Team's tests
+│   │   └── notebooks/       # Team's notebooks
+│   │
+│   ├── team_01/             # Instantiated for each team
+│   │   ├── src/
+│   │   ├── tests/
+│   │   └── notebooks/
+│   └── ...
+│
+├── data/                    # Shared data resources
+└── exercises/               # Shared exercise descriptions
 ```
 
 ## Development Workflow

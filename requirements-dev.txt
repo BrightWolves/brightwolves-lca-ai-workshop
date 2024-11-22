@@ -1,0 +1,13 @@
+-r requirements.txt
+
+# Additional development tools
+ipython>=8.22.1
+jupyterlab>=4.1.0
+pre-commit>=3.6.0
+pytest-watch>=4.2.0
+rich>=13.7.0
+
+# Documentation
+mkdocs>=1.5.0
+mkdocs-material>=9.5.0
+mkdocstrings>=0.24.0

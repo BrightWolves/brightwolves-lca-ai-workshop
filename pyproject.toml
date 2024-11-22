@@ -1,0 +1,30 @@
+[project]
+name = "brightwolves-lca-ai-workshop"
+version = "0.1.0"
+description = "Workshop materials for accelerating Life Cycle Analysis using AI/LLM tools"
+authors = [
+    {name = "BrightWolves", email = "contact@brightwolves.eu"},
+]
+requires-python = ">=3.10"
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.ruff]
+select = ["E", "F", "B", "I"]
+line-length = 100
+target-version = "py310"
+fix = true
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q --cov=src"
+testpaths = ["tests"]
