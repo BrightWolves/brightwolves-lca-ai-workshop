@@ -44,13 +44,26 @@ This workshop demonstrates how Large Language Models (LLMs) can enhance Life Cyc
    uv venv
    source .venv/bin/activate  # Windows: .venv\Scripts\activate
    
-   # Install dependencies
+   # Install core dependencies
    uv pip install -r requirements.txt
+   
+   # Optional: Install development tools
+   uv pip install -r requirements-dev.txt  # Adds testing, linting, docs tools
    
    # Setup environment variables
    cp .env.template .env
    # Edit .env with your API keys
    ```
+
+   The dependencies are split into two files:
+   - `requirements.txt`: Core packages needed for the workshop exercises
+   - `requirements-dev.txt`: Additional tools for testing, code quality, and documentation
+
+   We recommend installing both during the workshop to take advantage of:
+   - Code formatting (`black`)
+   - Type checking (`mypy`)
+   - Testing tools (`pytest`)
+   - Documentation generation (`mkdocs`)
 
 4. **Create Team Environment**
    ```bash
