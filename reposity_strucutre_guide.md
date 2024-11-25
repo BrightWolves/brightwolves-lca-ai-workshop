@@ -6,7 +6,7 @@
 - `prompts/` directory in team folders for version control of prompts
 - Each prompt type has its own file (extraction.md, validation.md, etc.)
 - Prompts are treated like code: reviewed, tested, and versioned
-- A good example is given here: solutions/team_template/prompts/extraction/example_extraction.md
+- A good example is given here: [solutions/team_template/prompts/extraction/example_extraction.md](./solutions/team_template/prompts/extraction/example_extraction.md)
 
 ### Prompt Types
 ```

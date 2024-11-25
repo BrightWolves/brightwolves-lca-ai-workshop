@@ -15,15 +15,15 @@ This workshop demonstrates how Large Language Models (LLMs) can enhance Life Cyc
 ## Prerequisites
 
 - Basic Python programming knowledge
-- Understanding of LCA concepts
-- GitHub account
+- Understanding of [LCA concepts](https://www.brightwolves.com/post/life-cycle-assessment-lcas-a-powerful-tool-for-extended-producer-responsibility-epr-compliance)
+- Basic understanding of [Git](https://git-scm.com/docs/user-manual) and access to [GitHub](https://github.com/) (ideally with your own account)
 - API access (instructions provided)
 
 ## Quick Start
 
 1. **Prerequisites**
    ```bash
-   # Install uv package manager
+   # Install [uv package manager](https://docs.astral.sh/uv/)
    curl -LsSf https://astral.sh/uv/install.sh | sh  # Unix/macOS
    powershell -c "irm https://astral.sh/uv/install.ps1 | iex"  # Windows
    ```
@@ -274,7 +274,7 @@ team_XX: Exercise YY - Brief Description
 
 ## Resources
 - [ ] TODO
-    - [LCA Background](link-to-resources) 
+    - [LCA Background]([link-to-resources](https://www.brightwolves.com/post/life-cycle-assessment-unveiling-iso-standards-gfli-in-our-newest-whitepaper-series)) 
     - [API Documentation](link-to-docs)
     - [Example Solutions](link-to-examples)
 
