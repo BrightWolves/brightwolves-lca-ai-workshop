@@ -1,0 +1,1 @@
+"""Team template package initialization."""

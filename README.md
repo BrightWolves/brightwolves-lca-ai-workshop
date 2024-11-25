@@ -44,13 +44,26 @@ This workshop demonstrates how Large Language Models (LLMs) can enhance Life Cyc
    uv venv
    source .venv/bin/activate  # Windows: .venv\Scripts\activate
    
-   # Install dependencies
+   # Install core dependencies
    uv pip install -r requirements.txt
+   
+   # Optional: Install development tools
+   uv pip install -r requirements-dev.txt  # Adds testing, linting, docs tools
    
    # Setup environment variables
    cp .env.template .env
    # Edit .env with your API keys
    ```
+
+   The dependencies are split into two files:
+   - `requirements.txt`: Core packages needed for the workshop exercises
+   - `requirements-dev.txt`: Additional tools for testing, code quality, and documentation
+
+   We recommend installing both during the workshop to take advantage of:
+   - Code formatting (`black`)
+   - Type checking (`mypy`)
+   - Testing tools (`pytest`)
+   - Documentation generation (`mkdocs`)
 
 4. **Create Team Environment**
    ```bash
@@ -125,14 +138,14 @@ This workshop demonstrates how Large Language Models (LLMs) can enhance Life Cyc
 
 ### 2. Hands-on Exercise (80 min)
 Teams work on mineral wool insulation case study:
-- Data extraction
-- Processing and analysis
-- Results visualization
+- Exercise 1 (20 min): Data extraction
+- Exercise 2 (25 min): Processing and analysis
+- Exercise 3 (25 min): Results analysis and visualisation
 
 ### 3. Results Discussion (20 min)
 - Team presentations
-- Best practices
-- Implementation considerations
+- Best practices, implementation considerations, key learnings
+- Next steps
 
 ## Next Steps
 1. Complete environment setup
@@ -142,21 +155,41 @@ Teams work on mineral wool insulation case study:
 ## Repository Structure
 
 ```
-lca-llm-workshop/
-├── solutions/
-│   ├── team_template/       # Template structure
-│   │   ├── src/             # Team's source code
-│   │   ├── tests/           # Team's tests
-│   │   └── notebooks/       # Team's notebooks
-│   │
-│   ├── team_01/             # Instantiated for each team
-│   │   ├── src/
-│   │   ├── tests/
-│   │   └── notebooks/
-│   └── ...
+brightwolves-lca-ai-workshop/
+├── exercises/                      # Exercise descriptions and starter code
+│   ├── __init__.py                 # Makes exercises a package
+│   ├── setup_env.py                # Environment setup helper
+│   ├── 01_data_extraction/        
+│   │   ├── README.md               # Exercise instructions
+│   │   └── starter_notebook.ipynb  # Template notebook to copy
+│   ├── 02_data_processing/
+│   │   ├── README.md
+│   │   └── starter_notebook.ipynb
+│   └── 03_analysis/
+│       ├── README.md
+│       └── starter_notebook.ipynb
 │
-├── data/                    # Shared data resources
-└── exercises/               # Shared exercise descriptions
+├── solutions/
+│   ├── __init__.py                 # Makes solutions a package
+│   ├── team_template/              # Template for team solutions
+│   │   ├── __init__.py           
+│   │   ├── src/                    # Team's source code
+│   │   │   ├── __init__.py
+│   │   │   ├── extraction.py
+│   │   │   ├── processing.py
+│   │   │   └── visualization.py
+│   │   ├── tests/                  # Team's tests
+│   │   │   ├── __init__.py
+│   │   │   └── test_extraction.py
+│   │   └── notebooks/              # Team's completed exercise notebooks
+│   │       ├── 01_data_extraction.ipynb  
+│   │       ├── 02_data_processing.ipynb
+│   └──     └── 03_analysis.ipynb
+│
+├── data/                          # Shared data resources
+│   └── reference_results/
+│
+└── setup_env.py                   # Root environment setup (optional)
 ```
 
 ## Development Workflow

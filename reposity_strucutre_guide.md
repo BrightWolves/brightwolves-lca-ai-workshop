@@ -102,6 +102,17 @@ The project uses both Jupyter notebooks (`.ipynb`) and Python source files (`.py
 
 ### Configuration Files
 - `pyproject.toml`: Project metadata and tool configurations (black, ruff, mypy, pytest)
+   + This is a standard Python project configuration file introduced with PEP 518, used to specify project metadata and tool configurations. In this case, it defines:
+
+      1. Project metadata (name, version, description, authors)
+      2. Python version requirement (>=3.10)
+      3. Tool configurations for:
+         - black (code formatter)
+         - ruff (linter)
+         - mypy (type checker)
+         - pytest (testing framework)
+
+   + It's placed in the root directory of the project and is used by modern Python tools like pip, build systems, and development tools to understand how to handle the project.
 - `.env.template`: Template for API keys and configuration
 - `.gitignore`: Specifies which files Git should ignore
 
