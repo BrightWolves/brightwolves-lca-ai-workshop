@@ -1,2 +1,0 @@
-Download link: https://api.environdec.com/api/v1/EPDLibrary/Files/06dd0b60-369d-4b58-e9be-08daf1bba573/Data 
-More Details: https://www.environdec.com/library/epd5553
