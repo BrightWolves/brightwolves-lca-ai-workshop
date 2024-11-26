@@ -31,7 +31,7 @@ This workshop demonstrates how Large Language Models (LLMs) can enhance Life Cyc
 2. **Clone & Setup**
    ```bash
    # Fork repo via GitHub interface first, then:
-   git clone https://github.com/your-username/brightwolves-lca-ai-workshop.git
+   git clone https://github.com/BrightWolves/brightwolves-lca-ai-workshop.git
    cd brightwolves-lca-ai-workshop
    
    # Add upstream remote
