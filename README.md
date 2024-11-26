@@ -336,3 +336,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
 For questions about this workshop or BrightWolves' LCA services:
 - Email: [info@brightwolves.eu](mailto:info@brightwolves.eu)
 - Website: [brightwolves.com](https://brightwolves.com)
+- 
+# API Keys
+- OpenAI
+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
+ 
+- Anthropic
+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
