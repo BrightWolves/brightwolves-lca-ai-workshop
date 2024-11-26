@@ -1,0 +1,14 @@
+Process,Input,Output,Unit,Amount per m2,Notes
+Raw Materials Input,Basalt,,kg,,55% of total raw material weight
+Raw Materials Input,Dolomite,,kg,,15% of total raw material weight
+Raw Materials Input,Slags,,kg,,25% of total raw material weight
+Raw Materials Input,Resin binder,,kg,,5% of total raw material weight
+Blast Furnace,Coke,,kg,,Calculate from combustion equation
+Blast Furnace,,Melted slab,kg,4.0,Total weight of functional unit (given)
+Spinning Unit,Electricity,,kWh,,Calculate from daily consumption
+Spinning Unit,Compressed air,,m3,,Given as 5.76 m3 per day at 600 kPa
+Spinning Unit,,Spun slab,m2,1.0,Functional unit reference
+Packaging,Polyethylene film,,kg,,Calculate from 0.030 kg/m2 (2 layers)
+Packaging,Wooden pallet,,unit,,Calculate based on pallet specifications
+Transport,Truck transport,,tkm,,Calculate: weight * distance
+Final Product,,Insulation slab,m2,1.0,R-value of 1.14 m2 K/W
