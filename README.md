@@ -293,10 +293,10 @@ team_XX: Exercise YY - Brief Description
    - Document approach
 
 ## Resources
-- [ ] TODO
-    - [LCA Background]([link-to-resources](https://www.brightwolves.com/post/life-cycle-assessment-unveiling-iso-standards-gfli-in-our-newest-whitepaper-series)) 
-    - [API Documentation](link-to-docs)
-    - [Example Solutions](link-to-examples)
+ - [LCA Background]([link-to-resources](https://www.brightwolves.com/post/life-cycle-assessment-unveiling-iso-standards-gfli-in-our-newest-whitepaper-series)) 
+ - API Documentation
+   + [Anthropic](https://docs.anthropic.com/en/home)
+   + [OpenAI](https://openai.com/api/)
 
 ## Getting Help
 
