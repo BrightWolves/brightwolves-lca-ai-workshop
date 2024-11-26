@@ -342,3 +342,7 @@ For questions about this workshop or BrightWolves' LCA services:
 sk-proj-rPn6XA_ai-Vv51DsewebRnWK9ERA80_AfRON3Nu_somMjj2OADdO8mMEoaxI8TN4GWhsxUGGFOT3BlbkFJGBAR74SJih-
 - OpenAI II
 uhFWTRnSq0TxkvWbv_B__hFvc1u4tFStSwSUc9qib_gLF4Y7xrU4_K3saeNylAA 
+# Anthropic I
+sk-ant-api03-9d2k9k2GUotqlrwE_lJf95ccrhqcyGvpscC72ZhpV3SUjjr5hA-
+# Anthropic II
+kuB4hGfQJyxBZaK-0lFdtI-He8FkpuudH4g-Xq1M8gAA
