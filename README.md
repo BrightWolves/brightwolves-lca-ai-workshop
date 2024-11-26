@@ -338,8 +338,7 @@ For questions about this workshop or BrightWolves' LCA services:
 - Website: [brightwolves.com](https://brightwolves.com)
 - 
 # API Keys
-- OpenAI
-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
- 
-- Anthropic
-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
+- OpenAI I
+sk-proj-rPn6XA_ai-Vv51DsewebRnWK9ERA80_AfRON3Nu_somMjj2OADdO8mMEoaxI8TN4GWhsxUGGFOT3BlbkFJGBAR74SJih-
+- OpenAI II
+uhFWTRnSq0TxkvWbv_B__hFvc1u4tFStSwSUc9qib_gLF4Y7xrU4_K3saeNylAA 
