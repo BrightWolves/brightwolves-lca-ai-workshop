@@ -155,41 +155,28 @@ Teams work on mineral wool insulation case study:
 ## Repository Structure
 
 ```
-brightwolves-lca-ai-workshop/
-├── exercises/                      # Exercise descriptions and starter code
-│   ├── __init__.py                 # Makes exercises a package
-│   ├── setup_env.py                # Environment setup helper
-│   ├── 01_data_extraction/        
-│   │   ├── README.md               # Exercise instructions
-│   │   └── starter_notebook.ipynb  # Template notebook to copy
-│   ├── 02_data_processing/
-│   │   ├── README.md
-│   │   └── starter_notebook.ipynb
-│   └── 03_analysis/
-│       ├── README.md
-│       └── starter_notebook.ipynb
+brightwolves-lca-ai-workshop/.
+├── data/                           # Workshop datasets and templates
+│   ├── example_epd.txt            # Sample EPD documents
+│   └── output_templates/          # Output format templates for exercises
 │
-├── solutions/
-│   ├── __init__.py                 # Makes solutions a package
-│   ├── team_template/              # Template for team solutions
-│   │   ├── __init__.py           
-│   │   ├── src/                    # Team's source code
-│   │   │   ├── __init__.py
-│   │   │   ├── extraction.py
-│   │   │   ├── processing.py
-│   │   │   └── visualization.py
-│   │   ├── tests/                  # Team's tests
-│   │   │   ├── __init__.py
-│   │   │   └── test_extraction.py
-│   │   └── notebooks/              # Team's completed exercise notebooks
-│   │       ├── 01_data_extraction.ipynb  
-│   │       ├── 02_data_processing.ipynb
-│   └──     └── 03_analysis.ipynb
+├── exercises/                      # Workshop exercise materials
+│   ├── 01_data_extraction/        # EPD data extraction exercise
+│   ├── 02_data_processing/        # Data processing and analysis
+│   ├── 03_analysis/              # Results analysis and visualization
+│   ├── 04_Validation/            # Data validation framework
+│   └── setup_env.py              # Environment setup utilities
 │
-├── data/                          # Shared data resources
-│   └── reference_results/
+├── solutions/                      # Team solution workspaces
+│   ├── team_template/             # Template for team solutions -- clone this and replace the content with your solutions to the excercises
+│   │   ├── notebooks/            # Team's exercise notebooks
+│   │   ├── prompts/             # LLM prompt templates
+│   │   ├── src/                 # Source code implementation
+│   │   └── tests/               # Team-specific tests
 │
-└── setup_env.py                   # Root environment setup (optional)
+├── docs/                          # Documentation and guides
+│   ├── APIServicesGuide.md       # API setup and usage guide
+│   └── repository_structure.md    # Detailed folder structure guide
 ```
 
 ## Development Workflow
